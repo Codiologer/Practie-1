@@ -1,0 +1,180 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.navbar{
+    position: absolute;
+    top: 20px;
+    height: 60px;
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.navbar .logo{
+    flex: 1;
+    width: auto;
+    font-weight: 500;
+    height: auto;
+    font-size: 35px;
+    color: rgb(255, 245, 220) ;
+    font-family: "Great Vibes",sans-serif;
+}
+.navbar .logo label:hover{
+    border-radius: 10px;
+    color: goldenrod;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .menubar{
+    display: flex;
+    justify-items:end;
+    align-items: center;
+}
+.navbar .menubar .Option{
+    padding-right: 25px;
+    font-size: 20px;
+}
+.navbar .menubar .Option a{
+    padding: 10px;
+    color:  rgb(255, 245, 220);
+    border-radius: 7px;
+    text-decoration: none;
+    font-family: Dancing Script;
+}
+.navbar .menubar .Option a:hover{
+    color: goldenrod;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.container{
+    width: 85%;
+    height: 65vh;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.col-left{
+    flex: 2;
+    border-radius: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.col-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.col-left .row1{
+    padding: 7px;
+    flex: 1;
+    background-color: rgb(240, 234, 214);
+    border-radius: 10px;
+    gap: 20px;
+    transition: all 0.5s  ease-in-out;
+    height: 100px;
+}
+.col-left .row1 .content{
+    font-size: 15px;
+    font-family: Dancing Script;
+}
+.col-left .row1:hover{
+    background-color: goldenrod;
+    flex: 3;
+    transition: all 0.75s  ease-in-out;
+}
+
+.col-left .row2{
+    background-color: rgb(240, 234, 214);
+    flex: 1;
+    border-radius: 10px;
+    transition: all 0.5s  ease-in-out;
+    height: 100px;
+}
+.col-left .row2:hover{
+    background-color: goldenrod;
+    flex: 3;
+    transition: all 0.75s  ease-in-out;
+}
+
+.col-left .row3{
+    flex: 1;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    transition: all 0.5s  ease-in-out;
+}
+
+
+.col-left .row3 .col1{
+    flex: 1;
+    background-color: rgb(240, 234, 214);
+    border-radius: 10px;
+    transition: all 0.5s  ease-in-out;
+}
+.col-left .row3 .col1:hover{
+    background-color: goldenrod;
+    flex: 3;
+    transition: all 0.75s  ease-in-out;
+}
+
+.col-left .row3 .col2{
+    flex: 1;
+    background-color: rgb(240, 234, 214);
+    border-radius: 10px;
+    transition: all 0.5s  ease-in-out;
+}
+.col-left .row3 .col2:hover{
+    background-color: goldenrod;
+    flex: 3;
+    transition: all 0.75s  ease-in-out;
+}
+
+.col-right .row1{
+    flex: 2;
+    background-color: rgb(240, 234, 214);
+    border-radius: 10px;
+    transition: all 0.5s  ease-in-out;
+}
+.col-right .row1:hover{
+    background-color: goldenrod;
+    flex: 7;
+    transition: all 0.75s  ease-in-out;
+}
+
+
+.col-right .row2{
+    flex: 2;
+    background-color: rgb(240, 234, 214);
+    border-radius: 10px;
+    transition: all 0.5s  ease-in-out;
+}
+.col-right .row2:hover{
+    background-color: goldenrod;
+    flex: 7;
+    transition: all 0.75s  ease-in-out;
+}
+
+.container .connections .fi-brands-whatsapp{
+    color: green;
+    width: 400px;
+}

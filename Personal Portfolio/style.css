@@ -1,0 +1,378 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 84, 84);
+}
+
+.navbar{
+    position: absolute;
+    top: 20px;
+    height: 60px;
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.navbar .logo{
+    flex: 1;
+    width: auto;
+    font-weight: 500;
+    height: auto;
+    font-size: 35px;
+    color: rgb(255, 245, 220) ;
+    font-family: "Great Vibes",sans-serif;
+}
+.navbar .logo a{
+    text-decoration: none;
+    color: rgb(255, 245, 220);
+} 
+.navbar .logo a:hover{
+    border-radius: 10px;
+    color: goldenrod;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .menubar{
+    display: flex;
+    justify-items:end;
+    align-items: center;
+}
+.navbar .menubar .Option{
+    padding-right: 25px;
+    font-size: 20px;
+}
+.navbar .menubar .Option a{
+    padding: 10px;
+    color:  rgb(255, 245, 220);
+    border-radius: 7px;
+    text-decoration: none;
+    font-family: Dancing Script;
+}
+.navbar .menubar .Option a:hover{
+    color: goldenrod;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.container{
+    width: 85%;
+    height: 65vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.col-left{
+    flex: 2;
+    border-radius: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 245, 220);
+    gap: 20px;
+    font-size: larger;
+}
+.col-left .animate-hover{
+    height: auto;
+    width: auto;
+}
+.col-left h1{
+    font-family: "Dancing Script",sans-serif;
+    font-size: 50px;
+    position: relative;
+    margin-bottom: 40px;
+}   
+.col-left h1:hover{
+    color: goldenrod;
+    transition: all 0.5s ease-in-out;   
+    animation: headShake 2s ease-in-out forwards;
+}
+@keyframes headShake {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+.col-left p{
+    font-family: "Dancing Script",sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.col-left p:hover{
+    color: goldenrod;
+    transition: all 0.5s ease-in-out;
+    animation: headShake 2s ease-in-out forwards;
+}
+.col-left button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: goldenrod;
+    color: rgb(255, 245, 220);
+    font-size: 20px;
+    font-family: "Dancing Script",sans-serif;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.col-left button:hover{
+    background-color: rgb(255, 245, 220);
+    color: goldenrod;
+    transition: all 0.5s ease-in-out;
+}
+
+.col-left .row1{
+    text-align: center;
+    padding: 7px;
+    flex: 1;
+    border-radius: 10px;
+    gap: 20px;
+    transition: all 0.5s  ease-in-out;
+    height: 100px;
+}
+.col-left .row1 .content{
+    font-size: 15px;
+    font-family: Dancing Script;
+}
+
+.container footer .svg{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(85, 84, 84);
+    color: rgb(255, 245, 220);
+    font-family: "Dancing Script",sans-serif;
+    gap: 30px;
+}
+.container footer .svg a{
+    text-decoration: none;
+    color: rgb(255, 245, 220);
+}
+.container footer svg:hover{
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.container footer .message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(85, 84, 84);
+    color: rgb(255, 245, 220);
+    font-family: "Dancing Script",sans-serif;
+    gap: 30px;
+}
+.container footer .message:hover{
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    color: goldenrod;
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        height: 80vh;
+        width: 80vh;
+    }
+    .navbar{
+        gap: 30px;
+    }
+    .navbar .logo{
+        font-size: 30px;
+        text-align: center;
+    }
+    .navbar .menubar .Option{
+        font-size: 15px;
+    }
+    .col-left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .col-left h1{
+        margin-top: 20px;
+        font-size: 50px;
+    }
+    .col-left p{
+        font-size: 20px;
+    }
+    .col-left button{
+        font-size: 20px;
+    }
+    .col-left .row1{
+        margin-top: 25px;
+        height: 20px;
+    }
+    .col-left .row1 .content{
+        font-size: 5px;
+    }
+    .container footer .svg{
+        height: 20px;
+        margin-bottom: 30px;
+    }
+    .container footer .message{
+        font-size: 17px;
+    }   
+    
+}
+@media (max-width: 425px){
+    .container{
+        flex-direction: column;
+        height: 80vh;
+        width: 80vh;
+    }
+    .navbar .logo{
+        font-size: 30px;
+        text-align: center;
+        border: 1px solid rgb(255, 245, 220);
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .navbar .menubar{
+        display: none;
+    }
+    .col-left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .col-left h1{
+        font-size: 30px;
+    }
+    .col-left p{
+        font-size: 20px;
+    }
+    .col-left button{
+        font-size: 20px;
+    }
+    .col-left .row1{
+        height: 20px;
+    }
+    .col-left .row1 .content{
+        font-size: 5px;
+    }
+    .container footer .svg{
+        height: 20px;
+        margin-bottom: 30px;
+    }
+    .container footer .message{
+        font-size: 17px;
+    }
+    
+}   
+
+@media (max-width: 375px){
+    .container{
+        flex-direction: column;
+        height: 80vh;
+        width: 80vh;
+    }
+    .navbar .logo{
+        font-size: 30px;
+        text-align: center;
+        border: 1px solid rgb(255, 245, 220);
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .navbar .menubar{
+        display: none;
+    }
+    .col-left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .col-left h1{
+        font-size: 30px;
+    }
+    .col-left p{
+        font-size: 20px;
+    }
+    .col-left button{
+        font-size: 20px;
+    }
+    .col-left .row1{
+        height: 20px;
+    }
+    .col-left .row1 .content{
+        font-size: 5px;
+    }
+    .container footer .svg{
+        height: 20px;
+        margin-bottom: 30px;
+    }
+    .container footer .message{
+        font-size: 17px;
+    }
+    
+}
+
+@media (max-width: 280px){
+    .container{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .col-left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .col-left h1{
+        font-size: 15px;
+    }
+    .col-left p{
+        font-size: 10px;
+    }
+    .col-left button{
+        font-size: 5px;
+    }
+    .col-left .row1{
+        height: 20px;
+    }
+    .col-left .row1 .content{
+        font-size: 5px;
+    }
+    .container footer .svg{
+        height: 20px;
+    }
+    .container footer .message{
+        height: 20px;
+    }
+    
+}

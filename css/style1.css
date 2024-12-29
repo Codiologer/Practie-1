@@ -1,0 +1,65 @@
+html{
+    background-color: #5f45bb;
+    color: white;
+    background-image: linear-gradient(to bottom right , #180cac , #d054e4);
+    min-height: 100%;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    min-height: 300px;
+    overflow-x: hidden;
+    line-height: 1.5;
+    text-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 10%);
+    font-family: " Quicksand " , sans-serif;
+}
+
+.content{
+    display:flex;
+    min-height: 100vh;
+    gap: 3rem;
+}
+
+.side{
+    max-height: 20rem;
+    max-width: 20rem;
+}
+
+.portrait{
+    border-radius: 9999px;
+    box-shadow: 0 2em 2em rgb(0 0 0 / 30%);
+}
+
+.about{
+    display:flex;
+    flex-direction:column;
+    max-width:32rem;
+    gap:1.5rem;
+}
+
+.name{
+        font-size:2.25rem;
+        line-height: 1.125;
+        margin-bottom: -1rem;
+}
+
+.job{
+    margin-top: 1rem;
+    color:#100d6e;
+    font-size:0.75rem;
+}
+
+.hr{
+    background-color: #ff5eb8;
+    border: none;
+    height:1px;
+    width:4rem;
+}
+
+.description{
+    font-size: 1.5rem;
+}
+
+.contact{
+    display: flex;
+}
+
+  
